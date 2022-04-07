@@ -2,14 +2,12 @@ package me.kickscar.msa.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 @SpringBootApplication
-@EnableEurekaServer
-public class ServiceRegistryServer {
-
+@EnableZuulProxy
+public class ServiceGatewayServer {
 	public static void main(String[] args) {
-		SpringApplication.run(ServiceRegistryServer.class, args);
+		SpringApplication.run(ServiceGatewayServer.class, args);
 	}
-
 }
