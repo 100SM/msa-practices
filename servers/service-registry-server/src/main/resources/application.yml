@@ -43,7 +43,7 @@ spring:
          on-profile: production   
 eureka:
    instance:
-      hostname: 192.168.0.51
+      hostname: 192.168.0.65
    server:
       enableSelfPreservation: false
       waitTimeInMsWhenSyncEmpty: 5        
